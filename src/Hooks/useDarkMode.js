@@ -7,7 +7,8 @@ export const useDarkMode = (value) => {
         console.log(dark)
         const value = window.localStorage.getItem("darkMode");
         console.log(value);
-        
+        let a = document.body.classList.toggle('dark-mode')
+        console.log('dark mode: ', a)
     }, [dark])
     return [dark, setDark];
 }
